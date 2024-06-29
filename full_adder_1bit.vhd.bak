@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity full_adder_1bit is port (
+   
+   A             : in STD_LOGIC;
+	B             : in STD_LOGIC;
+	C_in          : in STD_LOGIC;
+	sum 			  : out STD_LOGIC;
+	C_out         : out STD_LOGIC
+); 
+end full_adder_1bit;
+
+architecture Behavioral of full_adder_1bit is 
+begin 
+	Sum <= (A XOR B) XOR C_in;
+	C_out <= (A and B) OR (C_in And (A XOR B)
+	
+);
+end Behavioral;
